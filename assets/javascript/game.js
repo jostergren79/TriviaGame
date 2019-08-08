@@ -1,9 +1,34 @@
-window
+//define global variables
+
+let number = 60;
+
+let intervalId;
+
+    document.getElementById("startGame").addEventListener("click", run);
+
+    function run() {
+      clearInterval(intervalId);
+      intervalId = setInterval(decrement, 1000);
+    }
+
+    function decrement() {
+
+      number--;
+
+      document.getElementById("startGame").innerHTML = "<h2>" + number + "</h2>";
 
 
-let answers = [""]
+      if (number === 0) {
 
+        stop();
+        alert("Time Up!");
+      }
+    }
 
-window.onload = function() {
+function stop() {
 
+  clearInterval(intervalId);
+}
 
+run();
+   
