@@ -35,9 +35,7 @@ let intervalId;
 
 // still need to hide the questions, prevent more than one selection, and delay the timer until the startGame button has been clicked 
 
-
-
-    document.getElementById("startGame").addEventListener("click",run) 
+document.getElementById("timer").addEventListener("click", run) 
 
     function run() {
 
@@ -49,7 +47,7 @@ let intervalId;
 
       number--;
 
-      document.getElementById("startGame").innerHTML = "<h2>" + number + "</h2>";
+      document.getElementById("timer").innerHTML = "<h2>" + number + "</h2>";
 
 
       if (number === 0) {
