@@ -1,23 +1,23 @@
-//define global variables
+//defining global variables
 
 const myQuestions = [
 	{
 		question: "Which of the following actors starred in Dances With Wolves?",
 		answers: {
-			a: 'Tom Cruise',
+			a: 'Kevin Costner',
 			b: 'Jack Nicholsan',
-			c: 'Kevin Costner',
+			c: 'Tom Cruise',
 		},
-		correctAnswer: 'c'
+		correctAnswer: 'a'
 	},
 	{
 		question: "What animal is John Dunbar's companion in Dances With Wolves?",
 		answers: {
-			a: 'An Eagle',
-			b: 'A ferret',
-			c: 'A wolf',
+			a: 'a ferret',
+			b: 'a wolf',
+			c: 'an Eagle',
 		},
-		correctAnswer: 'c'
+		correctAnswer: 'b'
     },
     {
 		question: "What war did John Dunbar fight in?",
@@ -30,12 +30,12 @@ const myQuestions = [
 	},
 ];
 
-
-//timer work
-
 let number = 60;
-
 let intervalId;
+
+// still need to hide the questions, prevent more than one selection, and delay the timer until the startGame button has been clicked 
+
+
 
     document.getElementById("startGame").addEventListener("click",run) 
 
@@ -67,6 +67,5 @@ function stop() {
 run();
    
 
-document.getElementById("question1")
-.add
-// game function
+// need to use my object above to compare users guess and tally score at end of timer.
+
